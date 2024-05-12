@@ -56,14 +56,14 @@ export default function Landing() {
             <h2 className="text-center md:text-start w-full capitalize font-semibold text-base sm:text-3xl">
               Who <span className="text-obiman">Are</span> We?
             </h2>
-            <p className="font-medium text-sm sm:text-lg text-center md:text-start">
+            <p className=" text-sm sm:text-lg text-center md:text-start">
               Obiman is your one-stop destination for a seamless and innovative
               shopping experience. As a competitor in e-commerce and dispatch
               services, we bring you a curated selection of the latest smart
               products and cutting-edge solutions designed to enhance your
               everyday life.
             </p>
-            <p className="font-medium text-obiman text-sm sm:text-lg text-center md:text-start">
+            <p className=" text-obiman text-sm sm:text-lg text-center md:text-start">
               At Obiman, we believe in the power of technology to transform
               lives. We are constantly exploring new innovations and trends to
               bring you the most up-to-date products and services.
@@ -117,14 +117,14 @@ export default function Landing() {
             About the CEO
           </h2>
 
-          <p className="font-medium text-sm sm:text-lg text-center md:text-start">
+          <p className=" text-sm sm:text-lg text-center md:text-start">
             Obiman is your one-stop destination for a seamless and innovative
             shopping experience. As a competitor in e-commerce and dispatch
             services, we bring you a curated selection of the latest smart
             products and cutting-edge solutions designed to enhance your
             everyday life.
           </p>
-          <p className="font-medium text-obiman text-sm sm:text-lg text-center md:text-start">
+          <p className=" text-obiman text-sm sm:text-lg text-center md:text-start">
             At Obiman, we believe in the power of technology to transform lives.
             We are constantly exploring new innovations and trends to bring you
             the most up-to-date products and services.
@@ -153,7 +153,7 @@ export default function Landing() {
                 Altinsmart
               </h2>
 
-              <p className=" text-[13px] font-extralight sm:text-sm">
+              <p className=" text-[13px] font-light sm:text-sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
