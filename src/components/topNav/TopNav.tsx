@@ -5,7 +5,7 @@ export function TopNav() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   return (
-    <nav className="w-full flex items-center  fixed z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-4">
+    <nav className="w-full flex items-center backdrop-blur-md  fixed z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-4">
       <button onClick={() => navigate("/")}>
         <p className="font-bold text-base sm:text-2xl">Obiman Group</p>
       </button>
