@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html, body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+  background-color: #edf6f8;
+ 
+}
+
+.modal {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.swipeIn {
+  animation-name: swipeIn;
+  -webkit-animation-name: swipeIn;
+}
+
+@keyframes swipeIn {
+  0% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes swipeIn {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+  }
+}
+
+.swipeInLeft {
+  animation-name: swipeInLeft;
+  -webkit-animation-name: swipeInLeft;
+}
+
+@keyframes swipeInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes swipeInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+
+.review-slider .slick-next {
+ 
+  top:110% !important;
+  right: 45% !important;
+}
+
+.review-slider .slick-prev {
+  left: 45% !important;
+  top:110% !important;
+}
+
+.review-slider .slick-next:before {
+  content: " " !important;
+  
+}
+
+.review-slider .slick-prev:before {
+  content: " " !important;
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+.review-slider .slick-next {
+ 
+  top:110% !important;
+  right: 37% !important;
+}
+
+.review-slider .slick-prev {
+  left: 37% !important;
+  top:110% !important;
+}
+}
+
+.company-bg {
+  background: url('./assets/png/company.png');
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  
+}
+
+.map-bg {
+  background: url('./assets/png/map.png');
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+
+.clip {
+  -webkit-clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
