@@ -125,6 +125,10 @@ html, body {
   
 }
 
+.bg-container {
+  background: linear-gradient(45deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.3)), url('./assets/png/company.png');
+}
+
 .map-bg {
   background: url('./assets/png/map.png');
   background-repeat: no-repeat;

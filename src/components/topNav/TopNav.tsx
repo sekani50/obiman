@@ -5,9 +5,9 @@ export function TopNav() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   return (
-    <nav className="w-full flex items-center border-b border-b-[#f0f0f0] bg-[#edf6f8] fixed z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-4">
+    <nav className="w-full flex items-center  fixed z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-4">
       <button onClick={() => navigate("/")}>
-        <p className="font-bold text-base sm:text-2xl">ObiMan</p>
+        <p className="font-bold text-base sm:text-2xl">Obiman Group</p>
       </button>
  
       <div className="hidden">
@@ -18,3 +18,5 @@ export function TopNav() {
     </nav>
   );
 }
+
+// border-b border-b-[#f0f0f0] bg-[#edf6f8]

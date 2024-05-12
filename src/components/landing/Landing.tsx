@@ -16,7 +16,7 @@ export default function Landing() {
   return (
     <main className="w-full">
       <TopNav />
-      <div className="w-full h-fit mt-24 sm:mt-32">
+      <div className="w-full bg-container h-fit py-8 sm:py-10">
         <div className="w-full flex flex-col lg:flex-row px-4 sm:px-10 gap-6 items-center  my-10 sm:my-12">
           <div
             data-aos="fade-right"
@@ -35,12 +35,12 @@ export default function Landing() {
           </div>
 
           <div
-            data-aos="fade-left"
+            data-aos="zoom in"
             data-aos-easing="ease-in-out"
             data-aos-duration="1000"
             className="w-full rounded-xl h-fit overflow-hidden  flex items-center justify-center lg:w-[50%]"
           >
-            <div className="w-[300px] relative sm:w-[450px] h-[300px] sm:h-[450px] rounded-full bg-obiman"></div>
+            <div className="w-[300px] transform relative sm:w-[450px] h-[300px] sm:h-[450px] rounded-full bg-obiman"></div>
           </div>
         </div>
       </div>
