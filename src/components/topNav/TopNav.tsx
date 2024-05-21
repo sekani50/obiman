@@ -14,7 +14,7 @@ export function TopNav() {
   const businesses = [
     { title: "SmartBest Technology", link: "" },
     { title: "Altinsmart", link: "" },
-    { title: "LuxeCraft", link: "" },
+    { title: "Luxecraft", link: "" },
   ]
   return (
     <nav className="w-full flex items-center   z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-4">
