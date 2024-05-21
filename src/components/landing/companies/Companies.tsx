@@ -12,7 +12,7 @@ export function Companies() {
   ];
   return (
     <div className="w-full my-10 sm:my-12 ">
-      <div className=" w-full flex flex-col  gap-6 items-center justify-center">
+      <div className=" w-full flex flex-col gap-6 sm:gap-8 items-center justify-center">
         <h2 className="text-center text-black w-full capitalize font-semibold text-base sm:text-2xl">
           Our Companies
         </h2>

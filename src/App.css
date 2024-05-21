@@ -153,6 +153,11 @@ html, body {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
+.bg-team {
+  background-size: cover;
+  background: linear-gradient(60deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.3));
+}
+
 
 @tailwind base;
 @tailwind components;

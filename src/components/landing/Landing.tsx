@@ -4,22 +4,14 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import biz from "../../assets/png/ppl.jpg";
 import { Button } from "../ui/Button";
-import smartlogo from "../../assets/png/smartlogo.png";
-import ceo from "../../assets/png/ceo.jpg";
 import { MdOutlineContactPhone, MdOutlineMailOutline } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Footer } from "../footer/Footer";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import software from "../../assets/png/software.jpg";
 import archit from "../../assets/png/archit.jpg";
-import arch from "../../assets/png/arch.png";
-import htmlcss from "../../assets/png/htmlcss.png";
-import hardwork from "../../assets/png/hardwork.png";
 import smarthome from "../../assets/png/smarthome.png";
 import program from "../../assets/png/learn.png";
 import { Companies } from "./companies/Companies";
+import { Executives } from "./executives/Executives";
 export default function Landing() {
   useEffect(() => {
     Aos.init();
@@ -104,11 +96,11 @@ export default function Landing() {
               Our Vision & Mission
             </h2>
             <p
-              data-aos="fade-top"
+              data-aos="fade-up"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-delay="100"
-              className=" text-sm text-zinc-600 sm:text-lg font-light text-center "
+              className=" text-sm text-zinc-600 sm:text-base font-light text-center "
             >
               Our vision is to be a global leader in diversified investments,
               fostering innovation and sustainable growth across multiple
@@ -117,11 +109,11 @@ export default function Landing() {
               potential, driving economic and social progress.
             </p>
             <p
-              data-aos="fade-top"
+              data-aos="fade-up"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-delay="200"
-              className=" text-sm text-zinc-600 sm:text-lg font-light text-center "
+              className=" text-sm text-zinc-600 sm:text-base font-light text-center "
             >
               Our mission is to strategically invest in and manage a diverse
               portfolio of businesses, leveraging our expertise to enhance
@@ -132,9 +124,9 @@ export default function Landing() {
             </p>
 
             <Button
-              data-aos="fade-top"
+              data-aos="fade-up"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-delay="300"
               className="w-fit  px-10 h-12 border hover:text-white hover:bg-obiman transition-all duration-400 ease-in-out transform border-obiman rounded-none text-obiman"
             >
@@ -150,14 +142,14 @@ export default function Landing() {
           <div
             data-aos="fade-right"
             data-aos-easing="ease-in-out"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-delay="100"
             className="w-full text-white lg:w-[50%] px-4 py-6  sm:px-6 sm:py-8 flex flex-col items-center justify-center md:items-start md:justify-start gap-y-6"
           >
             <h2 className="text-center md:text-start w-full capitalize font-semibold text-base sm:text-2xl">
               Who <span className="">Are</span> We?
             </h2>
-            <p className=" text-sm sm:text-lg font-light text-center md:text-start">
+            <p className=" text-sm sm:text-base font-light text-center md:text-start">
               Obiman is your one-stop destination for a seamless and innovative
               shopping experience. As a competitor in e-commerce and dispatch
               services, we bring you a curated selection of the latest smart
@@ -189,46 +181,8 @@ export default function Landing() {
       {/** who are we ends*/}
      <Companies/>
       {/** our companies end */}
-      <div className="w-full my-10 sm:my-12 flex flex-col lg:flex-row gap-6 items-center lg:items-start p-4 h-fit sm:p-10">
-        <div
-          data-aos="fade-right"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-          className=" w-full clip lg:w-[500px]   rounded-full border-l-obiman border-t-obiman border-[30px] sm:border-[50px] border-b-obiman border-r-obiman   relative h-[300px]  sm:h-[500px]"
-        >
-          <img
-            src={ceo}
-            alt=""
-            className="w-full object-cover h-full rounded-full  ease-in-out"
-          />
-        </div>
-
-        <div
-          data-aos="fade-left"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-          className="w-full lg:w-[50%] gap-y-6 lg:pt-10 flex flex-col items-center justify-center md:justify-start md:items-start"
-        >
-          <h2 className=" font-semibold text-base sm:text-2xl text-center md:text-start">
-            About the CEO
-          </h2>
-
-          <p className=" text-sm sm:text-lg text-center md:text-start">
-            Obiman is your one-stop destination for a seamless and innovative
-            shopping experience. As a competitor in e-commerce and dispatch
-            services, we bring you a curated selection of the latest smart
-            products and cutting-edge solutions designed to enhance your
-            everyday life.
-          </p>
-          <p className=" text-obiman text-sm sm:text-lg text-center md:text-start">
-            At Obiman, we believe in the power of technology to transform lives.
-            We are constantly exploring new innovations and trends to bring you
-            the most up-to-date products and services.
-          </p>
-        </div>
-      </div>
+       <Executives/>
+      {/** executives end */}
 
       <div className="w-full map-bg my-8 sm:my-12 px-4 py-8 sm:py-12 sm:px-10">
         <div className="w-full flex flex-wrap items-center justify-center gap-6">
