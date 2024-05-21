@@ -126,7 +126,8 @@ html, body {
 }
 
 .bg-container {
-  background: linear-gradient(45deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.3)), url('./assets/png/company.png');
+  background-size: cover;
+  background: linear-gradient(60deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.3)), url('./assets/png/software.jpg');
 }
 
 .map-bg {
@@ -142,6 +143,16 @@ html, body {
   -webkit-clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
 }
+
+
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.image-hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
 
 @tailwind base;
 @tailwind components;

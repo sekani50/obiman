@@ -9,32 +9,83 @@ import ceo from "../../assets/png/ceo.jpg";
 import { MdOutlineContactPhone, MdOutlineMailOutline } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Footer } from "../footer/Footer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import software from "../../assets/png/software.jpg";
+import archit from "../../assets/png/archit.jpg";
+import arch from "../../assets/png/arch.png";
+import htmlcss from "../../assets/png/htmlcss.png";
+import hardwork from "../../assets/png/hardwork.png";
+import smarthome from "../../assets/png/smarthome.png"
+import program from "../../assets/png/learn.png"
 export default function Landing() {
   useEffect(() => {
     Aos.init();
   }, []);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    fade: false,
+    speed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+
   return (
     <main className="w-full">
       <TopNav />
-      <div className="w-full bg-container h-fit py-8 sm:py-10">
-        <div className="w-full flex flex-col lg:flex-row px-4 sm:px-10 gap-6 items-center  my-10 sm:my-12">
-          <div
-            data-aos="fade-right"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="1000"
-            className="flex w-full flex-col items-center gap-y-4 justify-center md:items-start md:justify-start  lg:w-[50%]"
-          >
-            <h2 className="text-center md:text-start text-lg font-semibold sm:text-xl md:text-6xl ">
-              Lorem ipsum dolor sit amet.{" "}
-              <span className="text-obiman">adipiscing elit</span>
-            </h2>
-            <p className="text-sm text-center md:text-start font-semibold md:text-lg ">
-              But I must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain.
-            </p>
-          </div>
+      {/** hero start */}
+      <div className="w-full bg-container backdrop-blur flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12  h-fit py-8 sm:py-10">
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+          className="flex w-full lg:w-[50%] max-w-xl flex-col items-center lg:items-start text-white gap-y-4 justify-center lg:justify-start "
+        >
+          <h2 className="text-center lg:text-start   text-lg font-semibold sm:text-2xl  ">
+            A Diversified Holding Company
+          </h2>
+          <p className="text-sm text-center lg:text-start font-light  md:text-lg ">
+            Our company is a diversified holding company with a global
+            footprint, managing a portfolio of businesses across technology,
+            real estate, industrial, and healthcare sectors. We focus on
+            delivering innovative solutions and sustainable growth, driving
+            value for our stakeholders through strategic investments and
+            operational excellence.
+          </p>
+        </div>
 
-          <div
+        <div className="w-full lg:w-[50%] flex relative items-center justify-center">
+        <div className="bg-white -top-1 left-8 absolute z-50 h-[8rem] w-[9rem] hexagon">
+          <img
+              src={smarthome}
+              alt=""
+              className="absolute m-auto inset-0 w-[88%] h-[88%] image-hexagon"
+            />
+            </div>
+            <div className="bg-white -bottom-1 right-8 absolute z-50 h-[8rem] w-[9rem] hexagon">
+          <img
+              src={program}
+              alt=""
+              className="absolute m-auto inset-0 w-[88%] h-[88%] image-hexagon"
+            />
+            </div>
+          <div className="bg-white relative  h-[25rem] w-[30rem] hexagon">
+         
+            <img
+              src={archit}
+              alt=""
+              className="absolute m-auto inset-0 w-[93%] h-[93%] image-hexagon"
+            />
+          </div>
+        </div>
+      </div>
+      {/**
+             <div
             data-aos="zoom in"
             data-aos-easing="ease-in-out"
             data-aos-duration="1000"
@@ -42,8 +93,9 @@ export default function Landing() {
           >
             <div className="w-[300px] transform relative sm:w-[450px] h-[300px] sm:h-[450px] rounded-full bg-obiman"></div>
           </div>
-        </div>
-      </div>
+       */}
+
+      {/**hero end */}
       <div className="w-full my-10 sm:my-12 px-4 sm:px-10">
         <div className=" w-full flex flex-col-reverse lg:flex-row  gap-6 items-center lg:items-start">
           <div
