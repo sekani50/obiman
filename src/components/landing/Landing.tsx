@@ -89,7 +89,7 @@ export default function Landing() {
       {/**hero end */}
 
       {/** vision and mission */}
-      <div className="w-full my-10 sm:my-12 ">
+      <div id="vision" className="w-full my-10 sm:my-12 ">
         <div className=" w-full flex flex-col  gap-6 items-center justify-center">
           <div className="w-full max-w-3xl   p-6 flex flex-col items-center justify-center  gap-y-6">
             <h2 className="text-center text-black w-full capitalize font-semibold text-base sm:text-2xl">
@@ -136,8 +136,8 @@ export default function Landing() {
         </div>
       </div>
       {/** vision and missio ends */}
-    
-      <div className="w-full my-10 sm:my-12 ">
+
+      <div id="whoarewe" className="w-full my-10 sm:my-12 ">
         <div className=" w-full flex flex-col-reverse lg:flex-row bg-obiman/90  gap-6 items-center lg:items-start">
           <div
             data-aos="fade-right"
@@ -179,13 +179,13 @@ export default function Landing() {
         </div>
       </div>
       {/** who are we ends*/}
-     <Companies/>
+      <Companies />
       {/** our companies end */}
-       <Executives/>
+      <Executives />
       {/** executives end */}
 
       <div className="w-full map-bg my-8 sm:my-12 px-4 py-8 sm:py-12 sm:px-10">
-        <div className="w-full flex flex-wrap items-center justify-center gap-6">
+        <div className="w-full flex flex-wrap items-start justify-center gap-6">
           <div
             data-aos="fade-left"
             data-aos-easing="ease-in-out"
@@ -222,7 +222,8 @@ export default function Landing() {
             <HiOutlineLocationMarker className="text-[28px] mb-2 sm:text-[40px] text-obiman" />
             <p className="font-semibold text-lg sm:text-2xl ">Address</p>
             <p className="text-center">
-              Elston TCLexington Ave 549MD, London, UK
+              House No 7 Udeco Medical Road Checy view , Lekki, Eti-Osa LGA,
+              Lagos state
             </p>
           </div>
         </div>

@@ -7,8 +7,8 @@ export function TopNav() {
   const { pathname } = useLocation();
 
   const aboutUs = [
-    { title: "Who are We", link: "" },
-    { title: "Vision & Mission", link: "" },
+    { title: "Who are We", link: "#whoarewe" },
+    { title: "Vision & Mission", link: "#vision" },
   ];
 
   const businesses = [
@@ -30,16 +30,16 @@ export function TopNav() {
           <MdOutlineArrowDropDown className="text-[22px]" />
           <div className="absolute hidden transition-all duration-200 ease-in-out transform top-5 z-[100] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
             {aboutUs.map(({ title, link }, index, arr) => (
-              <Link
+              <a
                 key={index}
                 className={cn(
                   "p-3 hover:font-semibold w-full text-start border-b border-white",
                   index === arr.length - 1 && "border-b-0"
                 )}
-                to={link}
+                href={link}
               >
                 {title}
-              </Link>
+              </a>
             ))}
           </div>
         </button>
