@@ -2,7 +2,7 @@ import { TopNav } from "../topNav/TopNav";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import biz from "../../assets/png/biz.png";
+import biz from "../../assets/png/ppl.jpg";
 import { Button } from "../ui/Button";
 import smartlogo from "../../assets/png/smartlogo.png";
 import ceo from "../../assets/png/ceo.jpg";
@@ -17,8 +17,9 @@ import archit from "../../assets/png/archit.jpg";
 import arch from "../../assets/png/arch.png";
 import htmlcss from "../../assets/png/htmlcss.png";
 import hardwork from "../../assets/png/hardwork.png";
-import smarthome from "../../assets/png/smarthome.png"
-import program from "../../assets/png/learn.png"
+import smarthome from "../../assets/png/smarthome.png";
+import program from "../../assets/png/learn.png";
+import { Companies } from "./companies/Companies";
 export default function Landing() {
   useEffect(() => {
     Aos.init();
@@ -33,7 +34,6 @@ export default function Landing() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
 
   return (
     <main className="w-full">
@@ -60,22 +60,21 @@ export default function Landing() {
         </div>
 
         <div className="w-full lg:w-[50%] flex relative items-center justify-center">
-        <div className="bg-white -top-1 left-8 absolute z-50 h-[8rem] w-[9rem] hexagon">
-          <img
+          <div className="bg-white -top-1 left-8 absolute z-50 h-[8rem] w-[9rem] hexagon">
+            <img
               src={smarthome}
               alt=""
               className="absolute m-auto inset-0 w-[88%] h-[88%] image-hexagon"
             />
-            </div>
-            <div className="bg-white -bottom-1 right-8 absolute z-50 h-[8rem] w-[9rem] hexagon">
-          <img
+          </div>
+          <div className="bg-white -bottom-1 right-8 absolute z-50 h-[8rem] w-[9rem] hexagon">
+            <img
               src={program}
               alt=""
               className="absolute m-auto inset-0 w-[88%] h-[88%] image-hexagon"
             />
-            </div>
+          </div>
           <div className="bg-white relative  h-[25rem] w-[30rem] hexagon">
-         
             <img
               src={archit}
               alt=""
@@ -96,32 +95,77 @@ export default function Landing() {
        */}
 
       {/**hero end */}
-      <div className="w-full my-10 sm:my-12 px-4 sm:px-10">
-        <div className=" w-full flex flex-col-reverse lg:flex-row  gap-6 items-center lg:items-start">
+
+      {/** vision and mission */}
+      <div className="w-full my-10 sm:my-12 ">
+        <div className=" w-full flex flex-col  gap-6 items-center justify-center">
+          <div className="w-full max-w-3xl   p-6 flex flex-col items-center justify-center  gap-y-6">
+            <h2 className="text-center text-black w-full capitalize font-semibold text-base sm:text-2xl">
+              Our Vision & Mission
+            </h2>
+            <p
+              data-aos="fade-top"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+              className=" text-sm text-zinc-600 sm:text-lg font-light text-center "
+            >
+              Our vision is to be a global leader in diversified investments,
+              fostering innovation and sustainable growth across multiple
+              industries. We aim to create lasting value for our stakeholders by
+              empowering our portfolio companies to achieve their full
+              potential, driving economic and social progress.
+            </p>
+            <p
+              data-aos="fade-top"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              className=" text-sm text-zinc-600 sm:text-lg font-light text-center "
+            >
+              Our mission is to strategically invest in and manage a diverse
+              portfolio of businesses, leveraging our expertise to enhance
+              operational efficiencies and market competitiveness. We are
+              committed to delivering exceptional returns for our investors
+              while promoting ethical practices, technological advancement, and
+              environmental stewardship across all our ventures.
+            </p>
+
+            <Button
+              data-aos="fade-top"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              className="w-fit  px-10 h-12 border hover:text-white hover:bg-obiman transition-all duration-400 ease-in-out transform border-obiman rounded-none text-obiman"
+            >
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </div>
+      {/** vision and missio ends */}
+    
+      <div className="w-full my-10 sm:my-12 ">
+        <div className=" w-full flex flex-col-reverse lg:flex-row bg-obiman/90  gap-6 items-center lg:items-start">
           <div
             data-aos="fade-right"
             data-aos-easing="ease-in-out"
             data-aos-duration="1000"
             data-aos-delay="100"
-            className="w-full lg:w-[50%] flex flex-col items-center justify-center md:items-start md:justify-start gap-y-6"
+            className="w-full text-white lg:w-[50%] px-4 py-6  sm:px-6 sm:py-8 flex flex-col items-center justify-center md:items-start md:justify-start gap-y-6"
           >
-            <h2 className="text-center md:text-start w-full capitalize font-semibold text-base sm:text-3xl">
-              Who <span className="text-obiman">Are</span> We?
+            <h2 className="text-center md:text-start w-full capitalize font-semibold text-base sm:text-2xl">
+              Who <span className="">Are</span> We?
             </h2>
-            <p className=" text-sm sm:text-lg text-center md:text-start">
+            <p className=" text-sm sm:text-lg font-light text-center md:text-start">
               Obiman is your one-stop destination for a seamless and innovative
               shopping experience. As a competitor in e-commerce and dispatch
               services, we bring you a curated selection of the latest smart
               products and cutting-edge solutions designed to enhance your
               everyday life.
             </p>
-            <p className=" text-obiman text-sm sm:text-lg text-center md:text-start">
-              At Obiman, we believe in the power of technology to transform
-              lives. We are constantly exploring new innovations and trends to
-              bring you the most up-to-date products and services.
-            </p>
 
-            <Button className="w-fit px-10 h-12 rounded-lg bg-obiman text-white">
+            <Button className="w-fit px-10 h-12 border border-white rounded-none text-white">
               Contact Us
             </Button>
           </div>
@@ -142,7 +186,9 @@ export default function Landing() {
           </div>
         </div>
       </div>
-
+      {/** who are we ends*/}
+     <Companies/>
+      {/** our companies end */}
       <div className="w-full my-10 sm:my-12 flex flex-col lg:flex-row gap-6 items-center lg:items-start p-4 h-fit sm:p-10">
         <div
           data-aos="fade-right"
@@ -184,37 +230,6 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="w-full  relative bg-[#111] my-10 sm:my-12 p-4 h-fit sm:p-10">
-        <div className="w-full  hidden h-full absolute inset-0 z-10 bg-obiman/80"></div>
-        <h2 className="font-semibold text-base sm:text-3xl relative z-40 text-white text-center mb-8 sm:mb-12">
-          Our Companies
-        </h2>
-
-        <div className="flex flex-wrap relative z-20 items-center justify-center gap-6">
-          {[1, 2, 3].map((_, index) => (
-            <div
-              key={_}
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
-              data-aos-delay={`${index + 2}00`}
-              className="w-[95%] max-w-[300px]  h-[330px] flex flex-col items-center gap-y-3 text-gray-300   border-gray-400 p-4 border  transition-all duration-400 ease-in-out transform"
-            >
-              <img src={smartlogo} alt="" className="w-[150px] h-[80px]" />
-              <h2 className="font-semibold text-white text-sm sm:text-lg mb-2">
-                Altinsmart
-              </h2>
-
-              <p className=" text-[13px] font-light sm:text-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
       <div className="w-full map-bg my-8 sm:my-12 px-4 py-8 sm:py-12 sm:px-10">
         <div className="w-full flex flex-wrap items-center justify-center gap-6">
           <div
