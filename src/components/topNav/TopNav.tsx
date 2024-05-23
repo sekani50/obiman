@@ -64,7 +64,7 @@ export function TopNav() {
 
       <div
         className={cn(
-          "hidden md:flex text-white text-sm items-center gap-x-4",
+          "hidden md:flex text-white text-sm items-center gap-x-6",
           isBackg && "",
           pathname.includes("contact-us") && "text-white "
         )}
@@ -113,7 +113,7 @@ export function TopNav() {
         </button>
         <Link to="/contact-us">Investor Relations</Link>
         <Link to="/contact-us">Media</Link>
-        <Link to="/contact-us">Career</Link>
+        <Link to="/career">Career</Link>
         <Link to="/contact-us">Contact</Link>
       </div>
 
@@ -201,6 +201,9 @@ export function TopNav() {
                 ))}
               </div>
             </button>
+            <Link className="w-full px-3 py-2 text-start" to="/career">
+              Career
+            </Link>
             <Link className="w-full px-3 py-2 text-start" to="/contact-us">
               Contact
             </Link>

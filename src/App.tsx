@@ -4,15 +4,17 @@ import "./App.css";
 import { Landing, ContactUs } from "./pages";
 import Company from "./components/company/Company";
 import Scrolltotop from "./components/ui/ScrollToTop";
+import Career from "./components/career/Career";
 
 const App: FC = () => {
   return (
     <div className="App w-full h-full text-black text-[13px] sm:text-sm">
       <Router>
-        <Scrolltotop/>
+        <Scrolltotop />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/company" element={<Company />} /> 
+          <Route path="/company" element={<Company />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </Router>
