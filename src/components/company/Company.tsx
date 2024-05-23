@@ -51,15 +51,15 @@ export default function Company() {
           <h2 className=" text-black w-full capitalize font-semibold text-base sm:text-3xl">
             {` About ${data?.name ?? ""}`}
           </h2>
-          <p
+
+          <div
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="500"
             data-aos-delay="100"
-            className=" text-sm text-zinc-600 sm:text-base font-normal "
-          >
-            {data?.about ?? ""}
-          </p>
+            className="text-sm text-zinc-600 sm:text-base font-normal"
+            dangerouslySetInnerHTML={{ __html: data?.about }}
+          />
 
           <Button
             onClick={() => window.open(data?.websiteLink, "_blank")}
