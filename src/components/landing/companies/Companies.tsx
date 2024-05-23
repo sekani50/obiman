@@ -25,7 +25,7 @@ export function Companies() {
       data: smartbestComp,
     },
     {
-      name: "Luxecraft",
+      name: "Luxecraft Home & Interior",
       link: "/company#luxecraft",
       image: luxecraft,
       data: luxecraftComp,
@@ -35,8 +35,14 @@ export function Companies() {
     <div className="w-full my-10 sm:my-12 ">
       <div className=" w-full flex flex-col gap-6 sm:gap-8 items-center justify-center">
         <h2 className="text-center text-black w-full capitalize font-semibold text-base sm:text-2xl">
-          Our Companies
+          Our Businesses
         </h2>
+
+        <p className="px-4 text-center w-full max-w-2xl text-[13px] sm:text-sm">
+          Obiman Group encompasses a diverse portfolio of subsidiaries, each
+          specialized in different sectors yet united under a common goal of
+          innovation and quality.
+        </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 w-full px-4 md:px-10 lg:px-20">
           {listOfCompanies.map(({ name, link, image, data }, index) => (

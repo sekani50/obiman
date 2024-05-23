@@ -29,6 +29,7 @@ export function TopNav() {
   const aboutUs = [
     { title: "Who are We", link: "/#whoarewe" },
     { title: "Vision & Mission", link: "/#vision" },
+    { title: "Leadership", link: "/#leadership" },
   ];
 
   const businesses = [
@@ -54,7 +55,10 @@ export function TopNav() {
         pathname.includes("contact-us") && "bg-obiman "
       )}
     >
-      <button className="w-[60px] h-[50px]" onClick={() => navigate("/")}>
+      <button
+        className={cn("w-[90px] h-[67px]", isBackg && "w-[60px] h-[50px]")}
+        onClick={() => navigate("/")}
+      >
         <img src={logo} alt="" className="w-full object-cover h-full" />
       </button>
 
@@ -84,7 +88,7 @@ export function TopNav() {
           </div>
         </button>
         <button className="flex group relative items-center">
-          <p>Our Companies</p>
+          <p>Our Businesses</p>
           <MdOutlineArrowDropDown className="text-[22px]" />
           <div className="absolute hidden transition-all duration-200 ease-in-out transform top-6 z-[150] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
             {businesses.map(({ title, link, data }, index, arr) => (
@@ -107,12 +111,15 @@ export function TopNav() {
             ))}
           </div>
         </button>
+        <Link to="/contact-us">Investor Relations</Link>
+        <Link to="/contact-us">Media</Link>
+        <Link to="/contact-us">Career</Link>
         <Link to="/contact-us">Contact</Link>
       </div>
 
       <div className="hidden md:block">
         <Button
-        onClick={() => navigate("/contact-us")}
+          onClick={() => navigate("/contact-us")}
           className={cn(
             "bg-obiman text-white rounded-md h-11  font-semibold",
             pathname.includes("contact-us") && "bg-white text-obiman "
@@ -143,7 +150,10 @@ export function TopNav() {
             onClick={(e) => {
               e.stopPropagation();
             }}
-            className={cn("w-[250px] absolute modal swipeIn right-0 top-16 bg-white flex flex-col items-start justify-start py-3", pathname.includes("contact-us") && "text-obiman")}
+            className={cn(
+              "w-[250px] absolute modal swipeIn right-0 top-16 bg-white flex flex-col items-start justify-start py-3",
+              pathname.includes("contact-us") && "text-obiman"
+            )}
           >
             <button className="w-full px-3 py-2 flex group  relative items-center">
               <p>About Us</p>

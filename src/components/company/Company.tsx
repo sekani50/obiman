@@ -28,7 +28,7 @@ export default function Company() {
         </div>
 
         <h2
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-easing="ease-in-out"
           data-aos-duration="500"
           data-aos-delay="100"
@@ -37,7 +37,7 @@ export default function Company() {
           {data?.name ?? ""}
         </h2>
         <p
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-easing="ease-in-out"
           data-aos-duration="500"
           data-aos-delay="100"

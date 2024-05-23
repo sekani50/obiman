@@ -22,7 +22,7 @@ export const smartbestComp = {
 };
 
 export const luxecraftComp = {
-  name: "Luxecraft",
+  name: "Luxecraft Home & Interior",
   link: "/company#luxecraft",
   image: craft,
   description:"Experience the pinnacle of luxury and style with our bespoke real estate and interior design solutions, transforming your spaces into exquisite masterpieces.",

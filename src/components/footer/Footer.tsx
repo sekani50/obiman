@@ -36,8 +36,8 @@ export function Footer() {
           >
             <MdOutlineMailOutline className="text-[28px] mb-2 sm:text-[40px] text-obiman" />
             <p className="font-semibold text-lg sm:text-2xl ">Email Us</p>
-            <p className="text-center">info@obiman.com</p>
-            <p className="text-center">support@obiman.com</p>
+            <p className="text-center">info@obimangroup.com</p>
+            <p className="text-center">support@obimangroup.com</p>
           </div>
           {/** */}
           <div

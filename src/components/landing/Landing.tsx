@@ -20,26 +20,23 @@ export default function Landing() {
     <main className="w-full">
       <TopNav />
       {/** hero start */}
-      
+
       <div className="w-full z-20 bg-container backdrop-blur pt-16 sm:pt-12 flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12 h-fit  sm:h-[650px] pb-8 sm:pb-10">
-     
         <div
           data-aos="fade-right"
           data-aos-easing="ease-in-out"
           data-aos-duration="1000"
           className="flex w-full lg:w-[50%] max-w-xl flex-col items-center lg:items-start text-white gap-y-4 justify-center lg:justify-start "
         >
-          <p className="font-semibold ">Obiman Group</p>
+          <p className="font-semibold ">Welcome to Obiman Group</p>
           <h2 className="text-center lg:text-start   text-lg font-semibold sm:text-2xl  ">
-            A Diversified Holding Company
+            Innovating for a Smarter Future
           </h2>
           <p className="text-sm text-center lg:text-start font-normal  md:text-lg ">
-            Our company is a diversified holding company with a global
-            footprint, managing a portfolio of businesses across technology,
-            real estate, industrial, and healthcare sectors. We focus on
-            delivering innovative solutions and sustainable growth, driving
-            value for our stakeholders through strategic investments and
-            operational excellence.
+            Obiman Group is a diversified conglomerate dedicated to fostering
+            innovation and driving excellence across multiple industries. We
+            pioneer sustainable solutions to enhance community living and create
+            a smarter future.
           </p>
         </div>
 
@@ -67,7 +64,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-     
+
       {/**
              <div
             data-aos="zoom in"
@@ -95,9 +92,9 @@ export default function Landing() {
               data-aos-delay="100"
               className=" text-sm text-zinc-600 sm:text-base font-normal text-center "
             >
-              Our vision is to be a global leader in diversified investments,
-              fostering innovation and sustainable growth across multiple
-              industries. We aim to create lasting value for our stakeholders by
+              Our vision is to be a leading conglomerate known for transforming
+              industries and enhancing community living through innovative
+              solutions. We aim to create lasting value for our stakeholders by
               empowering our portfolio companies to achieve their full
               potential, driving economic and social progress.
             </p>
@@ -108,11 +105,11 @@ export default function Landing() {
               data-aos-delay="200"
               className=" text-sm text-zinc-600 sm:text-base font-normal text-center "
             >
-              Our mission is to strategically invest in and manage a diverse
-              portfolio of businesses, leveraging our expertise to enhance
-              operational efficiencies and market competitiveness. We are
-              committed to delivering exceptional returns for our investors
-              while promoting ethical practices, technological advancement, and
+              Our mission is to establish a network of companies that lead in
+              adopting advanced technologies, promoting sustainable practices,
+              and developing vibrant, supportive communities. We are committed
+              to delivering exceptional returns for our investors while
+              promoting ethical practices, technological advancement, and
               environmental stewardship across all our ventures.
             </p>
 
@@ -143,11 +140,9 @@ export default function Landing() {
               Who <span className="">Are</span> We?
             </h2>
             <p className=" text-sm sm:text-base font-normal text-center md:text-start">
-              Obiman is your one-stop destination for a seamless and innovative
-              shopping experience. As a competitor in e-commerce and dispatch
-              services, we bring you a curated selection of the latest smart
-              products and cutting-edge solutions designed to enhance your
-              everyday life.
+              Obiman Group is a multifaceted conglomerate dedicated to pushing the boundaries of
+              innovation in real estate, technology, entertainment, and
+              e-commerce.
             </p>
 
             <Button className="w-fit px-10 h-12 border border-white rounded-none text-white">
