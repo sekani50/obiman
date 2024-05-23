@@ -50,7 +50,7 @@ export function TopNav() {
     <nav
       className={cn(
         "w-full flex items-center fixed  z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-3",
-        isBackg && "bg-white bg-opacity-85",
+        isBackg && "bg-black bg-opacity-85",
         pathname.includes("contact-us") && "bg-obiman "
       )}
     >
@@ -61,7 +61,7 @@ export function TopNav() {
       <div
         className={cn(
           "hidden md:flex text-white text-sm items-center gap-x-4",
-          isBackg && "text-black",
+          isBackg && "",
           pathname.includes("contact-us") && "text-white "
         )}
       >
