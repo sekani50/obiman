@@ -16,21 +16,11 @@ export default function Landing() {
     Aos.init();
   }, []);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    fade: false,
-    speed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <main className="w-full">
       <TopNav />
       {/** hero start */}
-      <div className="w-full bg-container backdrop-blur flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12  h-fit py-8 sm:py-10">
+      <div className="w-full bg-container backdrop-blur flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12 h-fit  sm:h-[600px] py-8 sm:py-10">
         <div
           data-aos="fade-right"
           data-aos-easing="ease-in-out"
@@ -40,7 +30,7 @@ export default function Landing() {
           <h2 className="text-center lg:text-start   text-lg font-semibold sm:text-2xl  ">
             A Diversified Holding Company
           </h2>
-          <p className="text-sm text-center lg:text-start font-light  md:text-lg ">
+          <p className="text-sm text-center lg:text-start font-normal  md:text-lg ">
             Our company is a diversified holding company with a global
             footprint, managing a portfolio of businesses across technology,
             real estate, industrial, and healthcare sectors. We focus on
@@ -99,7 +89,7 @@ export default function Landing() {
               data-aos-easing="ease-in-out"
               data-aos-duration="500"
               data-aos-delay="100"
-              className=" text-sm text-zinc-600 sm:text-base font-light text-center "
+              className=" text-sm text-zinc-600 sm:text-base font-normal text-center "
             >
               Our vision is to be a global leader in diversified investments,
               fostering innovation and sustainable growth across multiple
@@ -112,7 +102,7 @@ export default function Landing() {
               data-aos-easing="ease-in-out"
               data-aos-duration="500"
               data-aos-delay="200"
-              className=" text-sm text-zinc-600 sm:text-base font-light text-center "
+              className=" text-sm text-zinc-600 sm:text-base font-normal text-center "
             >
               Our mission is to strategically invest in and manage a diverse
               portfolio of businesses, leveraging our expertise to enhance
@@ -148,7 +138,7 @@ export default function Landing() {
             <h2 className="text-center md:text-start w-full capitalize font-semibold text-base sm:text-2xl">
               Who <span className="">Are</span> We?
             </h2>
-            <p className=" text-sm sm:text-base font-light text-center md:text-start">
+            <p className=" text-sm sm:text-base font-normal text-center md:text-start">
               Obiman is your one-stop destination for a seamless and innovative
               shopping experience. As a competitor in e-commerce and dispatch
               services, we bring you a curated selection of the latest smart
@@ -183,7 +173,6 @@ export default function Landing() {
       <Executives />
       {/** executives end */}
 
-   
       <Footer />
     </main>
   );

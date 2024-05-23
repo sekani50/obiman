@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html, body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x:hidden;
@@ -127,7 +127,12 @@ html, body {
 
 .bg-container {
   background-size: cover;
-  background: linear-gradient(60deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.3)), url('./assets/png/software.jpg');
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(180deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.5)), url('./assets/png/dev2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .map-bg {
@@ -156,6 +161,17 @@ html, body {
 .bg-team {
   background-size: cover;
   background: linear-gradient(60deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.3));
+}
+
+.bg-biz {
+  background-size: cover;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(180deg, hsl(31, 97%, 13%), rgba(84, 67, 47, 0.5)), url('./assets/png/comp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
 }
 
 

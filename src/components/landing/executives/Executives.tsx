@@ -47,7 +47,7 @@ export function Executives() {
           Executive Leaders
         </h2>
 
-        <div className="w-full flex items-center gap-6 flex-wrap justify-center">
+        <div className="w-full px-4 flex items-center gap-6 flex-wrap justify-center">
           <TeamWidget delay="100" image={mr} title={"Founder"} name={"Mr. A"} />
           <TeamWidget
             image={mrs}

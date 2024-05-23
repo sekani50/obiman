@@ -1,21 +1,25 @@
-import { useNavigate, useLocation, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { Button } from "../ui/Button";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { cn } from "../../lib/utils";
+import { altinsmartComp, luxecraftComp, smartbestComp } from "../../utils/data";
 export function TopNav() {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
 
   const aboutUs = [
-    { title: "Who are We", link: "#whoarewe" },
-    { title: "Vision & Mission", link: "#vision" },
+    { title: "Who are We", link: "/#whoarewe" },
+    { title: "Vision & Mission", link: "/#vision" },
   ];
 
   const businesses = [
-    { title: "SmartBest Technology", link: "" },
-    { title: "Altinsmart", link: "" },
-    { title: "Luxecraft", link: "" },
-  ]
+    {
+      title: "SmartBest Technology",
+      link: "/company#smartbest",
+      data: smartbestComp,
+    },
+    { title: "Altinsmart", link: "/company#altinsmart", data: altinsmartComp },
+    { title: "Luxecraft", link: "/company#luxecraft", data: luxecraftComp },
+  ];
   return (
     <nav className="w-full flex items-center   z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-4">
       <button onClick={() => navigate("/")}>
@@ -47,17 +51,23 @@ export function TopNav() {
           <p>Our Companies</p>
           <MdOutlineArrowDropDown className="text-[22px]" />
           <div className="absolute hidden transition-all duration-200 ease-in-out transform top-5 z-[150] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
-            {businesses.map(({ title, link }, index, arr) => (
-              <Link
+            {businesses.map(({ title, link, data }, index, arr) => (
+              <button
                 key={index}
+                onClick={() =>
+                  navigate(link, {
+                    state: {
+                      data,
+                    },
+                  })
+                }
                 className={cn(
                   "p-3 hover:font-semibold w-full text-start border-b border-white",
                   index === arr.length - 1 && "border-b-0"
                 )}
-                to={link}
               >
                 {title}
-              </Link>
+              </button>
             ))}
           </div>
         </button>

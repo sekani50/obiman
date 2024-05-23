@@ -5,10 +5,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export function Footer() {
+  
   useEffect(() => {
     Aos.init();
   }, []);
-  
+
   return (
     <footer className="w-full ">
       <div className="w-full map-bg my-8 sm:my-12 px-4 py-8 sm:py-12 sm:px-10">

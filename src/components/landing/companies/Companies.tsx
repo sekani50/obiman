@@ -1,14 +1,35 @@
 import altinsmart from "../../../assets/png/altis.png";
 import luxecraft from "../../../assets/png/luxe.jpg";
 import smartbest from "../../../assets/png/programmer.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { Button } from "../../ui/Button";
+import {
+  altinsmartComp,
+  luxecraftComp,
+  smartbestComp,
+} from "../../../utils/data";
 export function Companies() {
+  const navigate = useNavigate();
   const listOfCompanies = [
-    { name: "Altinsmart", link: "", image: altinsmart },
-    { name: "SmartBest Technology", link: "", image: smartbest },
-    { name: "Luxecraft", link: "", image: luxecraft },
+    {
+      name: "Altinsmart",
+      link: "/company#altinsmart",
+      image: altinsmart,
+      data: altinsmartComp,
+    },
+    {
+      name: "SmartBest Technology",
+      link: "/company#smartbest",
+      image: smartbest,
+      data: smartbestComp,
+    },
+    {
+      name: "Luxecraft",
+      link: "/company#luxecraft",
+      image: luxecraft,
+      data: luxecraftComp,
+    },
   ];
   return (
     <div className="w-full my-10 sm:my-12 ">
@@ -18,10 +39,16 @@ export function Companies() {
         </h2>
 
         <div className="flex flex-wrap items-center justify-center gap-4 w-full px-4 md:px-10 lg:px-20">
-          {listOfCompanies.map(({ name, link, image }, index) => (
-            <Link
+          {listOfCompanies.map(({ name, link, image, data }, index) => (
+            <button
+              onClick={() =>
+                navigate(link, {
+                  state: {
+                    data,
+                  },
+                })
+              }
               key={index}
-              to={link}
               className="w-full sm:w-[300px] group flex flex-col items-start justify-start gap-y-3"
             >
               <div className="w-full overflow-hidden rounded-t-md h-48">
@@ -36,7 +63,7 @@ export function Companies() {
                 <p>More</p>
                 <MdOutlineKeyboardDoubleArrowRight className="animate-pulse text-[22px]" />
               </Button>
-            </Link>
+            </button>
           ))}
         </div>
       </div>
