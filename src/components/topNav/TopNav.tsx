@@ -1,4 +1,4 @@
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 import { Button } from "../ui/Button";
 import { MdOutlineArrowDropDown, MdClose } from "react-icons/md";
 import { cn } from "../../lib/utils";
@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 export function TopNav() {
   const navigate = useNavigate();
   const [isNav, setNav] = useState(false);
+  const { pathname } = useLocation();
   const [isBackg, setShowBackg] = useState(false);
 
   function toggleNav() {
@@ -49,7 +50,8 @@ export function TopNav() {
     <nav
       className={cn(
         "w-full flex items-center fixed  z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-3",
-        isBackg && "bg-white bg-opacity-85"
+        isBackg && "bg-white bg-opacity-85",
+        pathname.includes("contact-us") && "bg-obiman "
       )}
     >
       <button className="w-[60px] h-[50px]" onClick={() => navigate("/")}>
@@ -59,13 +61,14 @@ export function TopNav() {
       <div
         className={cn(
           "hidden md:flex text-white text-sm items-center gap-x-4",
-          isBackg && "text-black"
+          isBackg && "text-black",
+          pathname.includes("contact-us") && "text-white "
         )}
       >
         <button className="flex group  relative items-center">
           <p>About Us</p>
           <MdOutlineArrowDropDown className="text-[22px]" />
-          <div className="absolute hidden transition-all duration-200 ease-in-out transform top-5 z-[100] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
+          <div className="absolute hidden transition-all duration-200 ease-in-out transform top-6 z-[100] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
             {aboutUs.map(({ title, link }, index, arr) => (
               <a
                 key={index}
@@ -83,7 +86,7 @@ export function TopNav() {
         <button className="flex group relative items-center">
           <p>Our Companies</p>
           <MdOutlineArrowDropDown className="text-[22px]" />
-          <div className="absolute hidden transition-all duration-200 ease-in-out transform top-5 z-[150] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
+          <div className="absolute hidden transition-all duration-200 ease-in-out transform top-6 z-[150] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
             {businesses.map(({ title, link, data }, index, arr) => (
               <button
                 key={index}
@@ -104,19 +107,31 @@ export function TopNav() {
             ))}
           </div>
         </button>
-        <Link to="">Contact</Link>
+        <Link to="/contact-us">Contact</Link>
       </div>
 
       <div className="hidden md:block">
-        <Button className="bg-obiman text-white rounded-md h-11  font-semibold">
+        <Button
+        onClick={() => navigate("/contact-us")}
+          className={cn(
+            "bg-obiman text-white rounded-md h-11  font-semibold",
+            pathname.includes("contact-us") && "bg-white text-obiman "
+          )}
+        >
           Contact Us
         </Button>
       </div>
-      <button onClick={toggleNav} className="block md:hidden relative">
+      <button
+        onClick={toggleNav}
+        className={cn(
+          "text-obiman block md:hidden relative",
+          pathname.includes("contact-us") && "text-white "
+        )}
+      >
         {isNav ? (
-          <MdClose className="text-[22px] text-obiman" />
+          <MdClose className="text-[22px] " />
         ) : (
-          <IoMenuOutline className="text-[22px] text-obiman" />
+          <IoMenuOutline className="text-[22px] " />
         )}
         <div
           className={cn(
@@ -176,7 +191,7 @@ export function TopNav() {
                 ))}
               </div>
             </button>
-            <Link className="w-full px-3 py-2 text-start" to="">
+            <Link className="w-full px-3 py-2 text-start" to="/contact-us">
               Contact
             </Link>
           </div>
