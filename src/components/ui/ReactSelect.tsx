@@ -61,7 +61,7 @@ export const ReactSelect = React.forwardRef<
           option: (baseStyles, state) => ({
             ...baseStyles,
             textAlign: "start",
-            color: state?.isSelected ? "white" : "black",
+            color: state?.isSelected ? "black" : "black",
             backgroundColor: state?.isFocused ? "#f1f5f9" : "",
           }),
           singleValue: (baseStyles) => ({
