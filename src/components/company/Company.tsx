@@ -46,8 +46,8 @@ export default function Company() {
           {data?.description ?? ""}
         </p>
       </div>
-      <div className="w-full my-10 sm:my-12 px-4 ">
-        <div className="w-full max-w-3xl mx-auto  p-6 flex flex-col items-start justify-start  gap-y-6">
+      <div className="w-full my-10 sm:my-12">
+        <div className="w-full max-w-3xl mx-auto  p-4 flex flex-col items-start justify-start  gap-y-6">
           <h2 className=" text-black w-full capitalize font-semibold text-base sm:text-3xl">
             {` About ${data?.name ?? ""}`}
           </h2>

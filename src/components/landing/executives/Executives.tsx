@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 export function Executives() {
   return (
     <>
-      <div className="w-full my-10 sm:my-12 flex flex-col lg:flex-row gap-6 items-center lg:items-start py-4 h-fit sm:py-10">
+      <div className="w-full my-10 p-4 sm:my-12 flex flex-col lg:flex-row gap-12 items-center lg:items-start py-4 h-fit sm:py-10">
         <div className=" w-full lg:w-[500px]  bg-obiman   relative h-[400px]  sm:h-[500px]">
           <div className="w-full h-full mt-8 pr-8">
             <img

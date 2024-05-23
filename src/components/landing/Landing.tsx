@@ -20,13 +20,16 @@ export default function Landing() {
     <main className="w-full">
       <TopNav />
       {/** hero start */}
-      <div className="w-full bg-container backdrop-blur flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12 h-fit  sm:h-[600px] py-8 sm:py-10">
+      
+      <div className="w-full z-20 bg-container backdrop-blur pt-16 sm:pt-12 flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12 h-fit  sm:h-[650px] pb-8 sm:pb-10">
+     
         <div
           data-aos="fade-right"
           data-aos-easing="ease-in-out"
           data-aos-duration="1000"
           className="flex w-full lg:w-[50%] max-w-xl flex-col items-center lg:items-start text-white gap-y-4 justify-center lg:justify-start "
         >
+          <p className="font-semibold ">Obiman Group</p>
           <h2 className="text-center lg:text-start   text-lg font-semibold sm:text-2xl  ">
             A Diversified Holding Company
           </h2>
@@ -64,6 +67,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
+     
       {/**
              <div
             data-aos="zoom in"

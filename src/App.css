@@ -174,6 +174,39 @@ html, body {
  
 }
 
+.modal {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.swipeIn {
+  animation-name: swipeIn;
+  -webkit-animation-name: swipeIn;
+}
+
+@keyframes swipeIn {
+  0% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes swipeIn {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
 
 @tailwind base;
 @tailwind components;
