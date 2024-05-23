@@ -62,7 +62,7 @@ export default function Company() {
           </p>
 
           <Button
-            onClick={() => navigate(data?.websiteLink)}
+            onClick={() => window.open(data?.websiteLink, "_blank")}
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="500"
