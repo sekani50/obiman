@@ -143,7 +143,7 @@ export function TopNav() {
             onClick={(e) => {
               e.stopPropagation();
             }}
-            className="w-[250px] absolute modal swipeIn right-0 top-16 bg-white flex flex-col items-start justify-start py-3"
+            className={cn("w-[250px] absolute modal swipeIn right-0 top-16 bg-white flex flex-col items-start justify-start py-3", pathname.includes("contact-us") && "text-obiman")}
           >
             <button className="w-full px-3 py-2 flex group  relative items-center">
               <p>About Us</p>
