@@ -52,7 +52,8 @@ export function TopNav() {
       className={cn(
         "w-full flex items-center fixed  z-50  inset-x-0 top-0 justify-between px-4 md:px-8 py-3",
         isBackg && "bg-black bg-opacity-85",
-        pathname.includes("contact-us") && "bg-obiman "
+        pathname.includes("contact-us") && "bg-obiman",
+        pathname.includes("news") && "bg-obiman"
       )}
     >
       <button
@@ -112,7 +113,7 @@ export function TopNav() {
           </div>
         </button>
         <Link to="/contact-us">Investor Relations</Link>
-        <Link to="/contact-us">Media</Link>
+        <Link to="/news">Media</Link>
         <Link to="/career">Career</Link>
         <Link to="/contact-us">Contact</Link>
       </div>
@@ -203,6 +204,9 @@ export function TopNav() {
             </button>
             <Link className="w-full px-3 py-2 text-start" to="/career">
               Career
+            </Link>
+            <Link className="w-full px-3 py-2 text-start" to="/news">
+              Media
             </Link>
             <Link className="w-full px-3 py-2 text-start" to="/contact-us">
               Contact

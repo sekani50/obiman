@@ -21,7 +21,7 @@ export default function Landing() {
       <TopNav />
       {/** hero start */}
 
-      <div className="w-full z-20 bg-container backdrop-blur pt-16 sm:pt-12 flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12 h-fit  sm:h-[650px] pb-8 sm:pb-10">
+      <div className="w-full z-20 bg-container backdrop-blur pt-20 sm:pt-12 flex flex-col lg:flex-row items-center gap-6 justify-between px-4 md:px-12 h-fit  sm:h-[650px] pb-8 sm:pb-10">
         <div
           data-aos="fade-right"
           data-aos-easing="ease-in-out"

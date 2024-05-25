@@ -1,10 +1,9 @@
 import { FC } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Landing, ContactUs } from "./pages";
-import Company from "./components/company/Company";
+import { Landing, ContactUs, Company, Career, News } from "./pages";
+
 import Scrolltotop from "./components/ui/ScrollToTop";
-import Career from "./components/career/Career";
 
 const App: FC = () => {
   return (
@@ -15,6 +14,7 @@ const App: FC = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/company" element={<Company />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/news" element={< News/>} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </Router>
