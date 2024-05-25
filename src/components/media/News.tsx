@@ -7,7 +7,7 @@ export default function News() {
     <>
       <TopNav />
 
-      <div className="w-full px-4 md:px-10 lg:px-20 mb-20  mt-10 lg:mt-32 lg:mb-12">
+      <div className="w-full px-4 md:px-10 lg:px-20 mb-20  mt-24 lg:mt-32 lg:mb-12">
         <h2 className="font-semibold text-base sm:text-2xl mb-6 sm:mb-8">
           Recent News
         </h2>
