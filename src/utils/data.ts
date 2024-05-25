@@ -89,3 +89,41 @@ export const luxecraftComp = {
   </div>
   `,
 };
+
+export const detail = ` <div>
+
+<h2 style="color: #333; margin-bottom: 13px;"><b>Obiman Group's Altinsmart Launches Revolutionary E-commerce Platform for Smart Home Technology</b></h2>
+
+<p style="color: #555;"><b>Nigeria, May 20, 2024</b> – Obiman Group, a leading diversified conglomerate, is excited to announce a groundbreaking development at its subsidiary, Altinsmart. The company has officially launched a state-of-the-art e-commerce platform that promises to redefine the smart home technology market. This innovative platform, developed with the expertise of Smartbest Technology, aims to centralize and streamline the purchasing process for smart home products, offering an enhanced user experience and unparalleled convenience.</p>
+
+<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>A New Era of Smart Home Shopping</b></h3>
+
+<p>Altinsmart’s new e-commerce platform is designed to be a one-stop-shop for all smart home needs, catering to both residential and industrial applications. The platform features an extensive range of products, from smart security systems and energy-efficient lighting to advanced home automation devices. With a user-friendly interface and robust search functionalities, customers can effortlessly find and purchase the latest in smart technology.</p>
+
+<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>Key Features and Innovations</b></h3>
+<ul style="color: #555;">
+    <li><strong>Insight Match AI:</strong> Leveraging cutting-edge artificial intelligence, this feature provides personalized product recommendations based on user preferences and behavior, ensuring customers find the best products to meet their needs.</li>
+    <li><strong>Shared Cart:</strong> A unique functionality developed by Smartbest Technology, the shared cart feature allows multiple users to add items to a single shopping cart. This is particularly beneficial for families and businesses making collaborative purchasing decisions.</li>
+</ul>
+
+<h3 style="color: #333;">Commitment to Excellence and Innovation</h3>
+<p style="color: #555;">Obitum Jonah Emmanuel, Founder and Chief Executive Officer of Obiman Group, commented on the launch: “We are thrilled to introduce this revolutionary e-commerce platform through Altinsmart. Our goal is to make smart home technology accessible and convenient for everyone. This platform is a testament to our commitment to innovation, quality, and customer satisfaction.”</p>
+
+<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>Future Plans</b></h3>
+<p style="color: #555;">Altinsmart plans to continually expand its product offerings and integrate more advanced features into the platform. Future updates will include enhanced AI capabilities, a wider selection of international vendors, and exclusive deals for loyal customers.</p>
+
+<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>About Obiman Group</b></h3>
+<p style="color: #555;">Obiman Group is a diversified conglomerate headquartered in Nigeria, operating globally through a diverse portfolio of businesses in real estate, technology, entertainment, and e-commerce. The group is dedicated to fostering innovation and driving excellence across multiple industries, with a mission to harness the synergies between its subsidiaries to deliver transformative solutions and enrich communities.</p>
+
+
+
+<hr style="border: 0; border-top: 1px solid #ccc; margin: 40px 0;">
+
+<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>About Altinsmart</b></h3>
+<p style="color: #555;">Altinsmart is a leading provider of smart home automation solutions and an innovative e-commerce platform. A subsidiary of Obiman Group, Altinsmart is committed to enhancing modern living through the integration of advanced technology and seamless user experiences.</p>
+
+
+<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>About Smartbest Technology</b></h3>
+<p style="color: #555;">Smartbest Technology, another subsidiary of Obiman Group, specializes in IT services, software development, and professional IT training. The company is at the forefront of technological innovation, developing cutting-edge solutions that drive efficiency and growth.</p>
+
+</div>` 

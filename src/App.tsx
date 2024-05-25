@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Landing, ContactUs, Company, Career, News } from "./pages";
+import { Landing, ContactUs, Company, Career, News, NewsDetail } from "./pages";
 
 import Scrolltotop from "./components/ui/ScrollToTop";
 
@@ -15,6 +15,7 @@ const App: FC = () => {
           <Route path="/company" element={<Company />} />
           <Route path="/career" element={<Career />} />
           <Route path="/news" element={< News/>} />
+          <Route path="/news-detail" element={< NewsDetail/>} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </Router>

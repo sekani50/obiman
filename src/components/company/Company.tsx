@@ -5,11 +5,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { Footer } from "../footer/Footer";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Executives } from "../landing/executives/Executives";
 export default function Company() {
   const { state } = useLocation();
-  const navigate = useNavigate();
+ // const navigate = useNavigate();
   const { data } = state;
   useEffect(() => {
     Aos.init();
@@ -46,6 +46,7 @@ export default function Company() {
           {data?.description ?? ""}
         </p>
       </div>
+      {/** */}
       <div className="w-full my-10 sm:my-12">
         <div className="w-full max-w-3xl mx-auto  p-4 flex flex-col items-start justify-start  gap-y-6">
           <h2 className=" text-black w-full capitalize font-semibold text-base sm:text-3xl">
