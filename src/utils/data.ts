@@ -112,11 +112,6 @@ export const detail = ` <div>
 <h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>Future Plans</b></h3>
 <p style="color: #555;">Altinsmart plans to continually expand its product offerings and integrate more advanced features into the platform. Future updates will include enhanced AI capabilities, a wider selection of international vendors, and exclusive deals for loyal customers.</p>
 
-<h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>About Obiman Group</b></h3>
-<p style="color: #555;">Obiman Group is a diversified conglomerate headquartered in Nigeria, operating globally through a diverse portfolio of businesses in real estate, technology, entertainment, and e-commerce. The group is dedicated to fostering innovation and driving excellence across multiple industries, with a mission to harness the synergies between its subsidiaries to deliver transformative solutions and enrich communities.</p>
-
-
-
 <hr style="border: 0; border-top: 1px solid #ccc; margin: 40px 0;">
 
 <h3 style="color: #333; margin-bottom: 13px; margin-top: 13px;"><b>About Altinsmart</b></h3>
