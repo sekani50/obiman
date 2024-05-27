@@ -178,7 +178,7 @@ export function TopNav() {
               </div>
             </button>
             <button className="w-full px-3 py-2 flex group relative items-center">
-              <p>Our Companies</p>
+              <p>Our Businesses</p>
               <MdOutlineArrowDropDown className="text-[22px]" />
               <div className="absolute hidden transition-all duration-200 ease-in-out transform top-8 z-[150] text-sm w-[200px] text-white py-2 group-hover:flex flex-col items-start justify-start bg-obiman opacity-80">
                 {businesses.map(({ title, link, data }, index, arr) => (
@@ -202,6 +202,7 @@ export function TopNav() {
                 ))}
               </div>
             </button>
+            <Link className="w-full px-3 py-2 text-start" to="/contact-us">Investor Relations</Link>
             <Link className="w-full px-3 py-2 text-start" to="/career">
               Career
             </Link>
